@@ -1,0 +1,11 @@
+.js-code-editor {
+	display: none;
+}
+#firepad-editor {
+	width: 100%;
+	height: 400px;
+}
+
+.firepad {
+	height: 400px;
+}
