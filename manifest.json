@@ -4,17 +4,21 @@
     "description": "This is a GitHub extension that allows users to collaborate over code.",
     "version": "1.0",
     "browser_action": {
-        "default_icon": "icon.png",
+        default_icon": "icon.png",
         "default_popup": ""
     },
-    "content_scripts": [{
-        "matches": ["https://github.com/*"],
-        "css": ["firepad.css", "editor.css"],
-        "js": ["jquery.min.js", "ace.js", "firebase.js", "firepad.min.js", "editor.js"]
-    }],
-    "permissions": [
-        "tabs",
+      wtgergrgregergergre
+      egrgerrge
+      gerg
+      fgfggeg"tabs",
         "https://github.com/*",
         "https://sweltering-torch-2863.firebaseio.com/*"
+        
+        
+        
+        
+        
+        
+        
     ]
 }
