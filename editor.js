@@ -12,7 +12,7 @@
 		var messagesRef = documentRef.child('messages');
 		// Append the firepad toolbar to the document
 		// Append the firepad editor to the document
-		$('form .file-commit-form').before('<button id="refresh-editor" style="float: right; margin-bottom: 15px; margin-left: 15px;">Refresh the Editor</button><button id="clear-editor" style="float: right; margin-bottom: 15px;">Clear the Editor</button><div id="firepad-editor"></div>');
+		$('form .file-commit-form').before('<button id="save-changes" style="float: right; margin-bottom: 15px; margin-left: 15px;">Save Changes</button><button id="refresh-editor" style="float: right; margin-bottom: 15px; margin-left: 15px;">Refresh the Editor</button><button id="clear-editor" style="float: right; margin-bottom: 15px;">Clear the Editor</button><div id="firepad-editor"></div>');
 		// Create the chat DOM elements
 		$('form .file-commit-form').before(
 			'<div class="message-dialog">' +
@@ -83,13 +83,15 @@
 			event.preventDefault();
 			firepad.setText('');
 		});
+		$('#save-changes').click(function(event) {
+			event.preventDefault();
+			submitData();
+		});
 		// Show the things after a delay
 		setTimeout(function() {
 			$('div.firepad').addClass('ready');
-		}, 250);
-		setTimeout(function() {
 			$('div.message-dialog').addClass('ready');
-		}, 1750)
+		}, 200);
 		// Submit new changes
 		var submitData = function() {
 			// Mark the changed boolean to true
