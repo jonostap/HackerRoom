@@ -2,56 +2,19 @@
     "manifest_version": 2,
     "name": "HackerRoom",
     "description": "This is a GitHub extension that allows users to collaborate over code.",
-    "versionsdafdafsdfsdfsddsf
-
-dfhhhhhh
-h
-h
-
-h
-
-yipeee!'
-
-,j,hkjhkl,ylkyuiluyliuyiuyiluyliuh
-wryrtwtrere
-wtetwetwewt
-program
-
-
-uuu]ffff
-f
-f
-f
-f
-f
-f
-f
-f
-f
-YOYO!!
-
-
-rsgdsdgs
-srgrgrs
-qerqwrerqerqe
-hhhhhhhhh
-hyeheyheygo
-I'm programming
-no im typing!!!!!
-
-
-gsdgdfgs
-ME TOO
-
-hghghjhggrfdfd
-fsd
-fsd
-sdf
-hjg
-rstsegfsegsd
-
-hackinghacking
-gt
-t
-t
-t
+    "version": "1.0",
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": ""
+    },
+    "content_scripts": [{
+        "matches": ["https://github.com/*"],
+        "css": ["firepad.css", "editor.css"],
+        "js": ["jquery.min.js", "ace.js", "firebase.js", "firepad.min.js", "editor.js"]
+    }],
+    "permissions": [
+        "tabs",
+        "https://github.com/*",
+        "https://sweltering-torch-2863.firebaseio.com/*"
+    ]
+}
