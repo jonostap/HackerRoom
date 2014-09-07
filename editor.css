@@ -9,3 +9,6 @@
 .firepad {
 	height: 400px;
 }
+.powered-by-firepad {
+	display: none;
+}
