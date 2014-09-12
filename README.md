@@ -6,7 +6,7 @@ In order to install Hacker Room simply clone the repository:
 ```
 git clone https://github.com/jonostap/HackerRoom
 ```
-Then, open Google Chrome and navigate to the "Tools > Extensions" menu: [Extensions Page][http://imgur.com/DSCrX3f.jpg]
+Then, open Google Chrome and navigate to the "Tools > Extensions" menu: [Extensions Page](http://imgur.com/DSCrX3f.jpg)
 Check the "Developer Mode" checkbox in the top-right of the screen. Then, click the "Load unpacked extension" button. After that, select the freshly cloned repository folder for HackerRoom and click "OK". You should now have HackerRoom installed.
 
 # Usage
